@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <button class="project-btn">JS Task Manager</button>
+ 
+
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Simple Task Manager</h1>
+        <p>Practice JavaScript DOM, Events & localStorage</p>
+           <!-- TOP BANNER IMAGE -->
+<section class="top-banner">
+    <img src="images/i1.jpg" alt="Task Manager Banner">
+</section>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h3>About This App</h3>
+    <p>
+        This Task Manager allows users to add, complete and delete tasks.
+        All tasks are saved in the browser using localStorage.
+    </p>
+</section>
+
+<!-- TASK MANAGER -->
+<section id="tasks" class="section">
+    <h3>Add New Task</h3>
+
+    <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter your task">
+        <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+ 

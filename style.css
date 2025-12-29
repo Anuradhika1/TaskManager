@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-btn {
+    background: white;
+    color: #1e3a8a;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #1e40af;
+}
+
+/* SECTION */
+.section {
+    background: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* TASK INPUT */
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #c7d2fe;
+}
+
+.task-input button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* TASK LIST */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#taskList li {
+    background: #e0e7ff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .task-input {
+        flex-direction: column;
+    }
+}
